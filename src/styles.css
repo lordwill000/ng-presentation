@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+html, body {
+  height: 100%;
+}
+
+p, li {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+}
+
+.page-wrapper {
+  background-image: url(/assets/xd-grid.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.btn-generic {
+  background-color: #1473e6;
+  border-radius: 1rem;
+  border: .125rem solid transparent;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.btn-generic:hover {
+  color: #fff;
+  background-color: #0000e6;
+}
