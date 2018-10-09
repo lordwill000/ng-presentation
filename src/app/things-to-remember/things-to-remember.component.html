@@ -1,0 +1,15 @@
+<div id="app-things-to-remember" class="things-to-remember-wrapper" (click)="backToStart()">
+  <div class=" page-wrapper d-flex align-items-center justify-content-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-light">
+          <h1>{{title}}</h1>
+          <ul>
+            <li *ngFor="let keypoint of keypoints; let i = index" class="animated fadeInUp delay-{{i}}s">{{keypoint}}</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

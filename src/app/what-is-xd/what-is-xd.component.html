@@ -1,20 +1,11 @@
-<div id="app-what-is-xd" class="what-is-xd-wrapper">
+<div id="app-what-is-xd" class="what-is-xd-wrapper" (click)="nextSlide()">
   <div class="page-wrapper d-flex align-items-center justify-content-center">
     <div class="container">
       <div class="row">
         <div class="col-12 text-light">
-          <h1>What is Adobe XD</h1>
+          <h1>{{title}}</h1>
           <ul>
-            <li class="animated fadeInUp delay">XD empowers designers with the speed, precision, and quality to
-              seamlessly iterate and share
-              interactive <span class="animated pulse infinite">prototypes</span> with team members and
-              reviewers
-              across devices and platforms, including Windows, Mac, iOS, and Android.</li>
-            <li class="animated fadeInUp delay-1s">Specially built for UI/UX design</li>
-            <li class="animated fadeInUp delay-2s">Lightweight and free</li>
-            <li class="animated fadeInUp delay-3s">Vector based</li>
-            <li class="animated fadeInUp delay-4s">Uses Artboard</li>
-            <li class="animated fadeInUp delay-5s">Easier prototyping</li>
+            <li *ngFor="let feature of features; let i = index" class="animated fadeInUp delay-{{i}}s">{{feature}}</li>
           </ul>
         </div>
       </div>
